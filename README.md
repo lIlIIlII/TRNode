@@ -25,4 +25,4 @@ email to `send2li@icloud.com`
 ## OPEN SOURCE
 
 1. GNU Scientific Library.
-2. Shiwenjia
+2. Shi Wenjia
