@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "trnode DBG",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/path_to_debug", // assign executive debug file here
+            "args": [ // choose arguments here
+                "9937",
+                "9937",
+            ],
+            "stopAtEntry": false,
+            "cwd": "/path_to_folder", // assign folder path here
+            "preLaunchTask": "trnode build",
+            "environment": [],
+            "externalConsole": false,
+            "internalConsoleOptions": "neverOpen",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/path_to_gdb", // assign gdb path here
+            "logging": {
+                "moduleLoad": false,
+                "programOutput": false
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+    ]
+}

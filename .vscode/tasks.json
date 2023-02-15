@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "trnode build",
+			"command": "make",
+			"args": [
+				"debug",
+				"-j8",
+			],
+			"options": {
+				"cwd": "/path_to_folder", // assign folder path here
+			},
+			"presentation": {
+				"close": true,
+			},
+			"detail": "make"
+		}
+	]
+}
